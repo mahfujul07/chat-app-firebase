@@ -4,14 +4,14 @@ import "firebase/firestore";
 import "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
-  databaseURL: process.env.DATABASE_URL,
-  projectId: process.env.PROJECT_ID,
-  storageBucket: process.env.STORAGE_BUCKET,
-  messagingSenderId: process.env.MESSAGING_SENDER_ID,
-  appId: process.env.APP_ID,
-  measurementId: process.env.MEASUREMENT_ID,
+  apiKey: "AIzaSyBAUmZtylTmztcyegO-zUQJwZZuTdnAZqM",
+  authDomain: "chat-app-mahfuz.firebaseapp.com",
+  databaseURL: "https://chat-app-mahfuz-default-rtdb.firebaseio.com",
+  projectId: "chat-app-mahfuz",
+  storageBucket: "chat-app-mahfuz.appspot.com",
+  messagingSenderId: "321103549997",
+  appId: "1:321103549997:web:d34659faa5be7b2c20caa4",
+  measurementId: "G-439HX5ZSEB",
 };
 
 const app = firebase.apps.length
