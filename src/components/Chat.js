@@ -3,10 +3,10 @@ import { db, timestamp } from "../utils/firebase";
 import Picker from "emoji-picker-react";
 import useStorage from "../hooks/useStorage";
 import { TailSpin } from "react-loader-spinner";
-import React from 'react'
+import React from "react";
 
 function Chat({ user }) {
-  const { upload, loading, url, getPreview } = useStorage("chat_attachment/");
+  const { loading, getPreview } = useStorage("chat_attachment/");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [pickEmoji, setPickEmoji] = useState(false);
@@ -116,21 +116,21 @@ function Chat({ user }) {
     setMessage("");
   };
 
-//   const sendPicture = () => {
-//     if (!image) return;
-//     upload(image);
-//   };
+  //   const sendPicture = () => {
+  //     if (!image) return;
+  //     upload(image);
+  //   };
 
-//   useEffect(() => {
-//     if (url) {
-//       setImage(null);
-//       saveOnFirebase(url);
-//     }
-//   }, [url, saveOnFirebase]);
+  //   useEffect(() => {
+  //     if (url) {
+  //       setImage(null);
+  //       saveOnFirebase(url);
+  //     }
+  //   }, [url, saveOnFirebase]);
 
-//   const handleChange = (e) => {
-//     setImage(e.target.files[0]);
-//   };
+  //   const handleChange = (e) => {
+  //     setImage(e.target.files[0]);
+  //   };
 
   return (
     <div className="relative flex-grow h-[85vh] bg-gray-50 rounded-md flex flex-col">
